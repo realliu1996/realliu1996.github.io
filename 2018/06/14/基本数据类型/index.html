@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Linux," />
+  <meta name="keywords" content="Java," />
 
 
 
@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="Linux命令小结 linux操作系统是一种很简介、方便的语言，使用命令行能够解决很多鼠标困难甚至不能完成的事情">
-<meta name="keywords" content="Linux">
+<meta name="description" content="基本数据类型表">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux命令小结">
-<meta property="og:url" content="http://yoursite.com/2018/01/20/Linux命令小结/index.html">
+<meta property="og:title" content="基本数据类型">
+<meta property="og:url" content="http://yoursite.com/2018/06/14/基本数据类型/index.html">
 <meta property="og:site_name" content="暮色微凉的博客">
-<meta property="og:description" content="Linux命令小结 linux操作系统是一种很简介、方便的语言，使用命令行能够解决很多鼠标困难甚至不能完成的事情">
+<meta property="og:description" content="基本数据类型表">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-02T05:55:48.000Z">
+<meta property="og:updated_time" content="2018-08-14T11:41:01.819Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux命令小结">
-<meta name="twitter:description" content="Linux命令小结 linux操作系统是一种很简介、方便的语言，使用命令行能够解决很多鼠标困难甚至不能完成的事情">
+<meta name="twitter:title" content="基本数据类型">
+<meta name="twitter:description" content="基本数据类型表">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/01/20/Linux命令小结/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/14/基本数据类型/"/>
 
 
 
 
 
-  <title>Linux命令小结 | 暮色微凉的博客</title>
+  <title>基本数据类型 | 暮色微凉的博客</title>
   
 
 
@@ -273,7 +273,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/20/Linux命令小结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/14/基本数据类型/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="realliu">
@@ -290,7 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux命令小结</h1>
+          <h1 class="post-title" itemprop="name headline">基本数据类型</h1>
         
 
         <div class="post-meta">
@@ -302,8 +302,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-20T17:08:19+08:00">
-                2018-01-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-14T19:03:29+08:00">
+                2018-06-14
               </time>
             
 
@@ -325,8 +325,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习/" itemprop="url" rel="index">
-                    <span itemprop="name">学习</span>
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
                   </a>
                 </span>
 
@@ -362,50 +362,132 @@
       
 
       
-        <h1 id="Linux命令小结"><a href="#Linux命令小结" class="headerlink" title="Linux命令小结"></a>Linux命令小结</h1><ul>
-<li>linux操作系统是一种很简介、方便的语言，使用命令行能够解决很多鼠标困难甚至不能完成的事情</li>
+        <h1 id="基本数据类型表"><a href="#基本数据类型表" class="headerlink" title="基本数据类型表"></a>基本数据类型表</h1><a id="more"></a>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Bytes</th>
+<th>Bits</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>byte</td>
+<td>1B</td>
+<td>8位</td>
+<td>-128 到 127</td>
+</tr>
+<tr>
+<td>short</td>
+<td>2B</td>
+<td>16位</td>
+<td>-2^15 到 2^15-1</td>
+</tr>
+<tr>
+<td>int</td>
+<td>4B</td>
+<td>32位</td>
+<td>-2^31 到 2^31-1</td>
+</tr>
+<tr>
+<td>long</td>
+<td>8B</td>
+<td>64位</td>
+<td>-2^63 到 2^63-1</td>
+</tr>
+<tr>
+<td>float</td>
+<td>4B</td>
+<td>32位</td>
+<td>单精度</td>
+</tr>
+<tr>
+<td>double</td>
+<td>8B</td>
+<td>64位</td>
+<td>双精度</td>
+</tr>
+<tr>
+<td>char</td>
+<td>2B</td>
+<td>16位</td>
+<td>/</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>/</td>
+<td>32位</td>
+<td>/</td>
+</tr>
+</tbody>
+</table>
+<p>( 黙认整数类型为 int,黙认浮点类型为 double )</p>
+<h1 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h1><blockquote>
+<p>1) 用以命名类、方法和变量、以及包:</p>
+<blockquote>
+<p>遵守 JAVA 的命名规范；<br>类名的每个单词都以大写字母开头；<br>方法和变量名第一个单词的首字母小写，其他的大写；</p>
+</blockquote>
+<p>2) 以字母、“_”或“$”开头；<br>3）大小写敏感，即大小写严格区分；<br>4) 无长度限制</p>
+<p>三种类型的注释：</p>
+<blockquote>
+<p>1）单行注释： <code>// 注释内容</code><br>2）多行注释： <code>/* 注释内容 */</code><br>3）文档注释： <code>/** 注释内容 */</code></p>
+</blockquote>
+<p>关键字(就是一类已经被启用的标识符)</p>
+<ul>
+<li>所有 Java 关键字都是小写英文字符串，不同于 C 语言中的TRUE、FALSE、NULL 等</li>
+<li>“goto”（标号：无条件的转向标号所标注的程序位置）and “const”: Java 中不建议使用，在 JAVA 语言里无意义，但是作为关键字保留。c/c++中也不建议使用！</li>
+<li>“true” , “false” and “null” ：不属于关键字，属于保留字</li>
 </ul>
-<a id="more"></a>
-<h2 id="基本的电脑命令"><a href="#基本的电脑命令" class="headerlink" title="基本的电脑命令"></a>基本的电脑命令</h2><ul>
-<li><p>关闭计算机</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shutdown -h now</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>重启计算机</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看Linux系统版本信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/issue</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看IP</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig -a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>显示当前进程</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">top</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>清屏</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">clear</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="基本的文件处理命令"><a href="#基本的文件处理命令" class="headerlink" title="基本的文件处理命令"></a>基本的文件处理命令</h2><ul>
-<li><p>查看文件内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cat     由第一行开始显示内容，并将所有内容输出</span><br><span class="line">tac     从最后一行倒序显示内容，并将所有内容输出</span><br><span class="line">more    根据窗口大小，一页一页的现实文件内容</span><br><span class="line">less    和more类似，但其优点可以往前翻页，而且进行可以搜索字符</span><br><span class="line">head    只显示头几行</span><br><span class="line">tail    只显示最后几行</span><br><span class="line">nl      类似于cat -n，显示时输出行号</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建、复制、移动、删除文件（如操作文件test到目录/home）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">touch test</span><br><span class="line">cp test /home</span><br><span class="line">mv test /home</span><br><span class="line">rm test /home</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建、复制、移动、删除目录（如操作目录test到目录/home）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir test</span><br><span class="line">cp -r test /home</span><br><span class="line">mv -r test /home</span><br><span class="line">rm -r test /home</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>压缩、解压文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.tar</span><br><span class="line">tar xvf FileName.tar （解包）</span><br><span class="line">tar cvf FileName.tar DirName（tar是打包，不是压缩）</span><br><span class="line">.gz</span><br><span class="line">gunzip FileName.gz（解压）</span><br><span class="line">gzip FileName（压缩）</span><br><span class="line">.tar.gz 和 .tgz</span><br><span class="line">tar zxvf FileName.tar.gz（解压）</span><br><span class="line">tar zcvf FileName.tar.gz DirName（压缩）</span><br><span class="line">.zip</span><br><span class="line">unzip FileName.zip（解压）</span><br><span class="line">zip FileName.zip DirName（压缩）</span><br><span class="line">.rar</span><br><span class="line">rar x FileName.rar（解压）</span><br><span class="line">rar a FileName.rar DirName（压缩）</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改文件内容、属性及权限（如操作文件test）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vim test</span><br><span class="line">chgrp users test（修改文件 test 的所属用户组为 users ）</span><br><span class="line">chown use test（修改文件 test 的所有者为 use ）</span><br><span class="line">chmod 777 test（修改文件test的权限为任何人都有读、写、运行三项权限）</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>下载、安装、卸载软件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(Ubuntu)</span><br><span class="line">sudo apt-get install tree           安装tree</span><br><span class="line">sudo apt-get remove tree            卸载tree</span><br><span class="line">sudo apt-get update                 更新软件</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
+<p>内存的逻辑分区</p>
+<blockquote>
+<p>1) 栈区:满足 first in last out（先进后出）的分配原则 —–&gt; 通常存放局部变量(在方法内部定义的变量)<br>2) 堆区:<br>自由存储区<br>c/c++: 动态分配的内存,指针变量；<br>java : 对象<br>3) 代码区:<br>专门用于存放函数的区域。<br> 函数指针：函数在代码区当中的地址<br> 指针函数：函数的返回值为指针类型的函数称为指针函数<br>4) 静态，常量存储区</p>
+</blockquote>
+<p>推荐命名规则<br>1) 类/接口名：单个单词的首字母大写，复合词则每个单词的首字母都大写；<br>2) 方法、变量名：第一个单词首字母小写，其余单词的首字母大写；<br>3) 常量名称：全部字母大写，单词间用“_”连接；<br>4) 包名：全部字母小写。</p>
+</blockquote>
+<h1 id="类与对象"><a href="#类与对象" class="headerlink" title="类与对象"></a>类与对象</h1><table>
+<thead>
+<tr>
+<th style="text-align:center">语言层面</th>
+<th style="text-align:center">实际应用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">类</td>
+<td style="text-align:center">群体</td>
+</tr>
+<tr>
+<td style="text-align:center">对象（object）</td>
+<td style="text-align:center">个体</td>
+</tr>
+<tr>
+<td style="text-align:center">实例（instance）</td>
+<td style="text-align:center">分配内存空间</td>
+</tr>
+<tr>
+<td style="text-align:center">实例化</td>
+<td style="text-align:center">创建对象</td>
+</tr>
+<tr>
+<td style="text-align:center">成员变量（member variable）</td>
+<td style="text-align:center">属性（attribute）</td>
+</tr>
+<tr>
+<td style="text-align:center">成员方法（member method ）</td>
+<td style="text-align:center">操作（operration）</td>
+</tr>
+<tr>
+<td style="text-align:center">引用（reference）</td>
+<td style="text-align:center">唯一标识/地址</td>
+</tr>
+<tr>
+<td style="text-align:center">引用型变量（reference variable）</td>
+<td style="text-align:center">/</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -423,7 +505,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
+            <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
           
         </div>
       
@@ -436,8 +518,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/20/Idea破解/" rel="next" title="Idea破解">
-                <i class="fa fa-chevron-left"></i> Idea破解
+              <a href="/2018/06/07/Java学习2/" rel="next" title="Java学习2">
+                <i class="fa fa-chevron-left"></i> Java学习2
               </a>
             
           </div>
@@ -446,8 +528,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/26/Java基础/" rel="prev" title="Java基础">
-                Java基础 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/06/15/数组与集合/" rel="prev" title="数组与集合">
+                数组与集合 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -601,7 +683,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux命令小结"><span class="nav-number">1.</span> <span class="nav-text">Linux命令小结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本的电脑命令"><span class="nav-number">1.1.</span> <span class="nav-text">基本的电脑命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本的文件处理命令"><span class="nav-number">1.2.</span> <span class="nav-text">基本的文件处理命令</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基本数据类型表"><span class="nav-number">1.</span> <span class="nav-text">基本数据类型表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标识符"><span class="nav-number">2.</span> <span class="nav-text">标识符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类与对象"><span class="nav-number">3.</span> <span class="nav-text">类与对象</span></a></li></ol></div>
             
 
           </div>
