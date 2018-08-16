@@ -98,7 +98,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://realliublog.oss-cn-hangzhou.aliyuncs.com/study/Java/Java%E5%9F%BA%E7%A1%80/Object%20oriented.PNG">
 <meta property="og:image" content="https://realliublog.oss-cn-hangzhou.aliyuncs.com/study/Java/Java%E5%9F%BA%E7%A1%80/overload-override.PNG">
-<meta property="og:updated_time" content="2018-08-15T12:30:07.781Z">
+<meta property="og:updated_time" content="2018-08-16T06:07:56.347Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="对象和类">
 <meta name="twitter:description" content="面向对象分析方法(OOA)">
@@ -481,6 +481,59 @@ table th:nth-of-type(2) {
 </blockquote>
 <img src="https://realliublog.oss-cn-hangzhou.aliyuncs.com/study/Java/Java%E5%9F%BA%E7%A1%80/overload-override.PNG" alt="overloadandoverride"></li>
 </ul>
+<h1 id="值传递和引用传递"><a href="#值传递和引用传递" class="headerlink" title="值传递和引用传递"></a>值传递和引用传递</h1><ul>
+<li><strong>区别</strong><blockquote>
+<p>值传递是指在调用函数时将实际参数复制一份传递到函数中，这样在函数中如果对参数进行修改，将不会影响到实际参数<br>引用传递就是直接把内存地址传过去，也就是说引用传递时，操作的其实都是源数据，这样的话修改有时候会冲突，需要用逻辑弥补</p>
+</blockquote>
+</li>
+<li><strong>Java中方法参数传递方式是按值传递</strong><blockquote>
+<p>如果参数是基本类型，传递的是基本类型的字面量值的拷贝<br>如果参数是引用类型，传递的是该参量所引用的对象在堆中地址值的拷贝</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h1><ul>
+<li><strong>定义</strong><blockquote>
+<p>1)抽象类不能被实例化(初学者很容易犯的错)，如果被实例化，就会报错，编译无法通过。只有抽象类的非抽象子类可以创建对象<br>2)抽象类中不一定包含抽象方法，但是有抽象方法的类必定是抽象类<br>3)抽象类中的抽象方法只是声明，不包含方法体，就是不给出方法的具体实现也就是方法的具体功能<br>4)构造方法，类方法（用static修饰的方法）不能声明为抽象方法<br>5)抽象类的子类必须给出抽象类中的抽象方法的具体实现，除非该子类也是抽象类</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h1><ul>
+<li><strong>定义</strong><blockquote>
+<p>在JAVA编程语言中是一个抽象类型，是抽象方法的集合，接口通常以interface来声明。一个类通过继承接口的方式，从而来继承接口的抽象方法<br>接口并不是类，编写接口的方式和类很相似，但是它们属于不同的概念。类描述对象的属性和方法。接口则包含类要实现的方法<br>除非实现接口的类是抽象类，否则该类要定义接口中的所有方法<br>接口无法被实例化，但是可以被实现。一个实现接口的类，必须实现接口内所描述的所有方法，否则就必须声明为抽象类。另外，在 Java 中，接口类型可用来声明一个变量，他们可以成为一个空指针，或是被绑定在一个以此接口实现的对象</p>
+</blockquote>
+</li>
+<li><strong>接口与类相似点</strong><blockquote>
+<p>1)一个接口可以有多个方法<br>2)接口文件保存在 .java 结尾的文件中，文件名使用接口名<br>3)接口的字节码文件保存在 .class 结尾的文件中<br>4)接口相应的字节码文件必须在与包名称相匹配的目录结构中</p>
+</blockquote>
+</li>
+<li><strong>接口与类的区别</strong><blockquote>
+<p>1)接口不能用于实例化对象<br>2)接口没有构造方法<br>3)接口中所有的方法必须是抽象方法<br>4)接口不能包含成员变量，除了 static 和 final 变量<br>5)接口不是被类继承了，而是要被类实现<br>6)接口支持多继承</p>
+</blockquote>
+</li>
+<li><strong>接口特性</strong><blockquote>
+<p>接口中每一个方法也是隐式抽象的,接口中的方法会被隐式的指定为 public abstract（只能是 public abstract，其他修饰符都会报错）<br>接口中可以含有变量，但是接口中的变量会被隐式的指定为 public static final 变量（并且只能是 public，用 private 修饰会报编译错误）<br>接口中的方法是不能在接口中实现的，只能由实现接口的类来实现接口中的方法</p>
+</blockquote>
+</li>
+<li><strong>抽象类和接口的区别</strong><blockquote>
+<p>1)抽象类中的方法可以有方法体，就是能实现方法的具体功能，但是接口中的方法不行<br>2)抽象类中的成员变量可以是各种类型的，而接口中的成员变量只能是 public static final 类型的。<br>3)接口中不能含有静态代码块以及静态方法(用 static 修饰的方法)，而抽象类是可以有静态代码块和静态方法<br>4)一个类只能继承一个抽象类，而一个类却可以实现多个接口</p>
+</blockquote>
+</li>
+<li><strong>重写接口中声明的方法时，需要注意以下规则</strong><blockquote>
+<p>类在实现接口的方法时，不能抛出强制性异常，只能在接口中，或者继承接口的抽象类中抛出该强制性异常<br>类在重写方法时要保持一致的方法名，并且应该保持相同或者相兼容的返回值类型<br>如果实现接口的类是抽象类，那么就没必要实现该接口的方法</p>
+</blockquote>
+</li>
+<li><strong>在实现接口的时候，也要注意一些规则</strong><blockquote>
+<p>一个类可以同时实现多个接口<br>一个类只能继承一个类，但是能实现多个接口<br>一个接口能继承另一个接口，类的多继承是不合法，但接口允许多继承</p>
+</blockquote>
+</li>
+<li><strong>标记接口</strong><blockquote>
+<p>最常用的继承接口是没有包含任何方法的接口<br>标记接口是没有任何方法和属性的接口.它仅仅表明它的类属于一个特定的类型,供其他代码来测试允许做一些事情<br>标记接口作用：简单形象的说就是给某个对象打个标（盖个戳），使对象拥有某个或某些特权<br>没有任何方法的接口被称为标记接口。标记接口主要用于以下两种目的</p>
+<blockquote>
+<p>1)建立一个公共的父接口：正如EventListener接口，这是由几十个其他接口扩展的Java API，你可以使用一个标记接口来建立一组接口的父接口<br>2)向一个类添加数据类型：这种情况是标记接口最初的目的，实现标记接口的类不需要定义任何接口方法(因为标记接口根本就没有方法)，但是该类通过多态性变成一个接口类型</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
 
       
     </div>
@@ -696,7 +749,7 @@ table th:nth-of-type(2) {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#面向对象分析方法-OOA"><span class="nav-number">1.</span> <span class="nav-text">面向对象分析方法(OOA)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#继承"><span class="nav-number">2.</span> <span class="nav-text">继承</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#封装"><span class="nav-number">3.</span> <span class="nav-text">封装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#多态"><span class="nav-number">4.</span> <span class="nav-text">多态</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#重写-Override-与重载-Overload"><span class="nav-number">4.1.</span> <span class="nav-text">重写(Override)与重载(Overload)</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#面向对象分析方法-OOA"><span class="nav-number">1.</span> <span class="nav-text">面向对象分析方法(OOA)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#继承"><span class="nav-number">2.</span> <span class="nav-text">继承</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#封装"><span class="nav-number">3.</span> <span class="nav-text">封装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#多态"><span class="nav-number">4.</span> <span class="nav-text">多态</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#重写-Override-与重载-Overload"><span class="nav-number">4.1.</span> <span class="nav-text">重写(Override)与重载(Overload)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#值传递和引用传递"><span class="nav-number">5.</span> <span class="nav-text">值传递和引用传递</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#抽象类"><span class="nav-number">6.</span> <span class="nav-text">抽象类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#接口"><span class="nav-number">7.</span> <span class="nav-text">接口</span></a></li></ol></div>
             
 
           </div>
